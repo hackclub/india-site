@@ -1,0 +1,19 @@
+{
+  "name": "hackclubindia",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@hackclub/icons": "^0.0.3",
+    "@hackclub/theme": "^0.1.2",
+    "next": "9.4.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-icons": "^3.10.0",
+    "theme-ui": "^0.3.1"
+  }
+}
