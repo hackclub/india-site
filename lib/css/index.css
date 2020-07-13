@@ -352,9 +352,7 @@ template {
 
 /*This is some custom styling*/
 
-html,
-body,
-#__next {
+html {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
