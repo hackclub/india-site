@@ -4,20 +4,28 @@ import { jsx, Grid } from 'theme-ui'
 import { GroupInfo, ExploreInfo, ExhibitInfo } from './infocont'
 
 export default () => (
-  <div sx={{ ml: [4, 5], mb: 5 }}>
+  <div sx={{ variant: 'containerspec', mb: 3 }}>
     <h1 sx={{ mb: 0, color: 'grey' }}>What is Hack Club ?</h1>
-    <h1 sx={{ fontSize: [5, 6], width: '80vw', my: 0 }}>
+    <h1 sx={{ variant: 'headerspec', my: 0 }}>
       <span sx={{ color: 'primary' }}>Philosophy</span>
     </h1>
-    <p sx={{ mt: 0, fontSize: 3, width: ['80vw'] }}>
+    <p sx={{ variant: 'paraspec', mt: 0 }}>
       Hack Club is an initiative for students by students. Hack Club is a place
       that lets you tinker, break, and rebuild. After all, you can't make an
       omelet without breaking a few eggs 🍳
     </p>
     <Grid columns={[1, 1, 3]} sx={{ mt: 4, pt: 3 }}>
-      <Image text={Text.group} Info={GroupInfo} imgname="group.jpg" />
-      <Image text={Text.explore} Info={ExploreInfo} imgname="explore.jpg" />
-      <Image text={Text.exhibit} Info={ExhibitInfo} imgname="codingvar.jpg" />
+      <Image text={Text.get('group')} Info={GroupInfo} imgname="group.jpg" />
+      <Image
+        text={Text.get('explore')}
+        Info={ExploreInfo}
+        imgname="explore.jpg"
+      />
+      <Image
+        text={Text.get('exhibit')}
+        Info={ExhibitInfo}
+        imgname="codingvar.jpg"
+      />
     </Grid>
   </div>
 )
@@ -36,18 +44,27 @@ const Image = ({ imgname, text, Info }) => (
         pt: 1
       }}
     >
-      <h1 sx={{ mx: 4, fontSize: 4, textShadow: '1px 1px 5px black' }}>
-        {text}
-      </h1>
+      <h1 sx={{ variant: 'imageh1' }}>{text}</h1>
     </div>
-    <div sx={{ mt: 3, fontSize: 3, a: { color: 'blue' } }}>
+    <div sx={{ variant: 'imageinfo' }}>
       <Info />
     </div>
   </div>
 )
 
-const Text = {
-  group: ' A group of students gather to start coding. Many are beginners.',
-  explore: 'You start making awesome real-world projects from day one.',
-  exhibit: 'At the end of the day, you exhibit your project to the community.'
-}
+const Text = new Map()
+
+Text.set(
+  'group',
+  ' A group of students gather to start coding. Many are beginners.'
+)
+
+Text.set(
+  'explore',
+  'You start making awesome real-world projects from day one.'
+)
+
+Text.set(
+  'exhibit',
+  'At the end of the day, you exhibit your project to the community.'
+)

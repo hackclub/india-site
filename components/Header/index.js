@@ -14,7 +14,7 @@ export default () => {
         zIndex: 1000,
         backgroundColor: 'white',
         opacity: '0.97',
-        borderBottom: 'soldi 1px grey'
+        borderBottom: '1px solid rgba(48, 48, 48, 0.125)'
       }}
     >
       <img
@@ -34,7 +34,10 @@ export default () => {
       >
         <Icon
           glyph="menu"
-          sx={{ display: ['initial', 'initial', 'none'] }}
+          sx={{
+            display: ['initial', 'initial', 'none'],
+            ':hover': { cursor: 'pointer' }
+          }}
           size={55}
         />
         {/*
