@@ -88,19 +88,19 @@ export default withResizeDetector(({ width }) => {
             <Menu />
           </div>
 
-          <Link Text="Home" />
-          <Link Text="Alexa-challenge" />
-          <Link Text="Join" />
-          <Link Text="Team" />
+          <Link Text="Home" url="./" />
+          <Link Text="Alexa-challenge" url="https://alexa.hackclub.com/" />
+          <Link Text="Join" url="https://apply.hackclub.com/" />
+          <Link Text="Team" url="./team" />
         </div>
       </div>
     </>
   )
 })
 
-const Link = ({ Text }) => (
+const Link = ({ Text, url }) => (
   <p sx={{ mx: 3, fontSize: 2, display: ['none', 'none', 'initial'] }}>
-    <span sx={{ cursor: 'pointer', color: 'mute' /* color: white'*/ }}>
+    <span sx={{ cursor: 'pointer', color: 'mute' }} onClick={() => Open(url)}>
       {Text}
     </span>
   </p>
@@ -119,14 +119,14 @@ const Overlay = ({ display }) => (
       flexDirection: 'column'
     }}
   >
-    <OverlayItem Text={'Home'} />
-    <OverlayItem Text={'Alexa-Challenge'} />
-    <OverlayItem Text={'Join'} />
-    <OverlayItem Text={'Team'} />
+    <OverlayItem Text={'Home'} url="./" />
+    <OverlayItem Text={'Alexa-Challenge'} url="https://alexa.hackclub.com/" />
+    <OverlayItem Text={'Join'} url="https://apply.hackclub.com/" />
+    <OverlayItem Text={'Team'} url="./team" />
   </div>
 )
 
-const OverlayItem = ({ Text }) => (
+const OverlayItem = ({ Text, url }) => (
   <div sx={{ ml: 4, my: 0 }}>
     <p
       sx={{
@@ -139,17 +139,17 @@ const OverlayItem = ({ Text }) => (
         pl: 3
       }}
     >
-      <b sx={{ fontWeight: 'regular' }}> {Text}</b>
+      <b
+        sx={{ fontWeight: 'regular', ':hover': { cursor: 'pointer' } }}
+        onClick={() => Open(url)}
+      >
+        {' '}
+        {Text}
+      </b>
     </p>
   </div>
 )
 
-/** <div sx={{ width: '100vw', display: 'flex' }}>
-    <img sx={{ width: '120px', ml: 5 }} src="hackclubflag.png" />
-    <div sx={{ flex: 1, justifyContent: 'center', display: 'flex' }}>
-      <Link Text="Home" />
-      <Link Text="Clubs" />
-      <Link Text="Workshops" />
-      <Link Text="Team" />
-    </div>
-  </div> */
+const Open = url => {
+  window.open(url, '_self')
+}
