@@ -1,6 +1,8 @@
 /**@jsx jsx*/
 
-import { jsx } from 'theme-ui'
+import { jsx, Grid } from 'theme-ui'
+import styled from '@emotion/styled'
+import theme from '../../lib/theme/index'
 
 export default () => (
   <div sx={{ variant: 'containerspec', mb: 5 }}>
@@ -29,5 +31,109 @@ export default () => (
         Spring 2020 applications accepted on a rolling basis.
       </span>
     </p>
+
+    <Grid columns={[1, 1, 2]}>
+      <GrantFeature
+        sx={{
+          borderRadius: 8,
+          mr: [2, 4, 1],
+          color: 'white',
+          //      gridColumn: ['1/3', '1/2', '1/2'],
+          pb: [4, 5],
+          // maxWidth: '390px',
+          ':after': {
+            display: ['none', 'initial']
+          }
+        }}
+      >
+        <h1 sx={{ ml: 3 }}>Join the movement!</h1>
+        <p sx={{ ml: 3, fontSize: 3 }}>
+          Apply for a hack club and make a community makers. We are looking for
+          people like you to widespread the movement.
+        </p>
+        <a
+          href="https://apply.hackclub.com/"
+          target="_blank"
+          sx={{
+            ml: 3,
+            fontSize: 3,
+            color: 'white',
+            width: '10%',
+            mb: 5,
+            textDecorationLine: 'none',
+            ':hover': {
+              textDecorationLine: 'underline'
+            }
+          }}
+        >
+          <span>
+            <b>Apply for hack club {` >`}</b>
+          </span>
+        </a>
+      </GrantFeature>
+      <Imagesecond />
+    </Grid>
+  </div>
+)
+
+const GrantFeature = styled.div`
+  position: relative;
+  overflow: visible;
+  background: linear-gradient(94.45deg, #ec3750 5.58%, #d61731 98.22%);
+  &:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: -4rem;
+    right: -2rem;
+    background-image: url(spiderman.png);
+    width: 12rem;
+    height: 12rem;
+  }
+`
+
+const Imagesecond = () => (
+  <div
+    sx={{
+      mr: [2, 4, 2],
+      mt: [2, 5, 0],
+      height: ['400px', '400px', 'initial']
+    }}
+  >
+    <div
+      sx={{
+        backgroundImage: `linear-gradient(transparent, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.5) 100%), url("club.jpg")`,
+        boxShadow: 'rgba(0, 0, 0, 0.063) 0px 8px 32px',
+        width: '100%',
+        backgroundSize: 'cover',
+        height: '100%',
+        borderRadius: [5, 8],
+        display: 'flex',
+        flexDirection: 'column-reverse',
+        color: 'white',
+        pl: 3
+      }}
+    >
+      <p
+        sx={{
+          fontSize: 3,
+          mx: [2, 4],
+          mt: 3,
+          mb: 4,
+          textShadow: '1px 1px 5px black'
+        }}
+      >
+        <b>
+          Hack clubs are communities of
+          <span sx={{ color: 'cyan' }}> makers </span>
+          and we would be more than happy to help you make your own hack club!
+        </b>
+      </p>
+      <h1 sx={{ variant: 'imageh1', mx: [2, 4], my: 0 }}>
+        Make a <span sx={{ color: 'orange' }}>community!</span>
+      </h1>
+    </div>
   </div>
 )

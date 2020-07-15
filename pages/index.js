@@ -7,10 +7,11 @@ import Introduction from '../components/Introduction/index'
 import HackIntro from '../components/Hackclubintro/index'
 import GlobalCommunity from '../components/Globalcommunity/index'
 import Clubs from '../components/Clubs/index'
+import Scrapbook from '../components/Scrapbook/index'
 
 export default () => {
   return (
-    <div sx={{ height: '100%', width: '100%' }}>
+    <>
       <Head>
         <title>Hack Club India</title>
       </Head>
@@ -18,7 +19,8 @@ export default () => {
       <Introduction />
       <HackIntro />
       <GlobalCommunity />
+      <Scrapbook />
       <Clubs />
-    </div>
+    </>
   )
 }

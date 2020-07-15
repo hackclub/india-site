@@ -9,7 +9,7 @@ export default () => {
   return (
     <div
       sx={{
-        width: '100vw',
+        width: '100%',
         position: 'fixed',
         zIndex: 1000,
         backgroundColor: 'white',

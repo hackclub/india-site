@@ -5,13 +5,17 @@ import { jsx } from 'theme-ui'
 export default () => (
   <div
     sx={{
-      width: '100vw',
+      width: ['100%', '100%'],
+      position: 'relative',
       background: `linear-gradient(125.06deg, #005AB5 0%, #003F7D 74.28%)`,
-      pt: 5
+      pt: [4, 5]
+      //  mx: [4, 0],
+      // borderRadius: [5, 0]
+      // mt: ['5rem', 0]
     }}
   >
     <div
-      sx={{ width: '100vw', display: 'flex', justifyContent: 'center', mt: 5 }}
+      sx={{ width: '100%', display: 'flex', justifyContent: 'center', mt: 5 }}
     >
       <img
         sx={{
@@ -41,14 +45,14 @@ export default () => (
         src="indianflag.png"
       ></img>
     </div>
-    <div sx={{ width: '100vw', textAlign: 'center' }}>
+    <div sx={{ width: '100%', textAlign: 'center' }}>
       <h1 sx={{ color: 'white', fontSize: [5, 6, 6, 7], my: 0, mb: [2, 3] }}>
         <span sx={{ color: 'orange' }}>Hack</span>{' '}
         <span sx={{ color: '' }}>Club</span>
         <span sx={{ color: 'green' }}>-India</span>
       </h1>
     </div>
-    <div sx={{ width: '100vw', textAlign: 'center', pb: [5], color: 'white' }}>
+    <div sx={{ width: '100%', textAlign: 'center', pb: [5], color: 'white' }}>
       <p sx={{ fontSize: [2, 3], mx: [4], mt: 0 }}>
         We are trying to make it the best place to be on the internet as a
         teenager 🌎
