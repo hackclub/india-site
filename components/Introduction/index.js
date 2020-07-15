@@ -1,12 +1,12 @@
 /**@jsx jsx*/
 
 import { jsx } from 'theme-ui'
+import Scrollock from 'react-scrolllock'
 
 export default () => (
   <div
     sx={{
-      width: ['100%', '100%'],
-      position: 'relative',
+      width: ['100%'],
       background: `linear-gradient(125.06deg, #005AB5 0%, #003F7D 74.28%)`,
       pt: [4, 5]
       //  mx: [4, 0],
@@ -17,6 +17,8 @@ export default () => (
     <div
       sx={{ width: '100%', display: 'flex', justifyContent: 'center', mt: 5 }}
     >
+      <Scrollock isActive={true} />
+
       <img
         sx={{
           height: ['50px', '80px', '80px', '100px'],

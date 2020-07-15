@@ -2,10 +2,9 @@
 
 import { jsx, Grid } from 'theme-ui'
 import styled from '@emotion/styled'
-import theme from '../../lib/theme/index'
 
 export default () => (
-  <div sx={{ variant: 'containerspec', mb: 5 }}>
+  <div sx={{ variant: 'containerspec', mb: 5, pb: [3, 4, 5], ml: [3, 5] }}>
     <h1 sx={{ color: 'grey', my: 0 }}>
       <span
         sx={{
@@ -104,10 +103,11 @@ const Imagesecond = () => (
   >
     <div
       sx={{
-        backgroundImage: `linear-gradient(transparent, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.5) 100%), url("club.jpg")`,
+        backgroundImage: `linear-gradient(transparent, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.5) 100%), url("communityind.jpg")`,
         boxShadow: 'rgba(0, 0, 0, 0.063) 0px 8px 32px',
         width: '100%',
         backgroundSize: 'cover',
+        backgroundPosition: 'center center',
         height: '100%',
         borderRadius: [5, 8],
         display: 'flex',

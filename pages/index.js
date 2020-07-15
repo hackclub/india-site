@@ -8,6 +8,8 @@ import HackIntro from '../components/Hackclubintro/index'
 import GlobalCommunity from '../components/Globalcommunity/index'
 import Clubs from '../components/Clubs/index'
 import Scrapbook from '../components/Scrapbook/index'
+import Hackathon from '../components/Hackathons/index'
+import Footer from '../components/Footer/index'
 
 export default () => {
   return (
@@ -20,7 +22,9 @@ export default () => {
       <HackIntro />
       <GlobalCommunity />
       <Scrapbook />
+      <Hackathon />
       <Clubs />
+      <Footer />
     </>
   )
 }

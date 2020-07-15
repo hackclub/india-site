@@ -3,7 +3,7 @@
 import { jsx, Grid, Flex } from 'theme-ui'
 
 export default () => (
-  <div sx={{ width: '100%', variant: 'containerspec', mb: 5 }}>
+  <div sx={{ width: '100%', variant: 'containerspec', mb: [5] }}>
     <h1 sx={{ mb: 0, color: 'grey' }}> Share with the world !</h1>
     <h1 sx={{ color: 'orange', variant: 'headerspec', mt: 0 }}>Scrapbook 📙</h1>
     <p sx={{ variant: 'paraspec' }}>

@@ -3,7 +3,7 @@
 import { jsx, Grid } from 'theme-ui'
 
 export default () => (
-  <div sx={{ variant: 'containerspec', mb: 5 }}>
+  <div sx={{ variant: 'containerspec', mb: [5] }}>
     <h1 sx={{ color: 'green', my: 0 }}>Join a global community !</h1>
     <h1 sx={{ variant: 'headerspec', color: 'orange', my: 0 }}>Community 🌏</h1>
     <p sx={{ variant: 'paraspec', mt: 1 }}>

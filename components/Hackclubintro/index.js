@@ -4,7 +4,7 @@ import { jsx, Grid } from 'theme-ui'
 import { GroupInfo, ExploreInfo, ExhibitInfo } from './infocont'
 
 export default () => (
-  <div sx={{ variant: 'containerspec', mb: 3 }}>
+  <div sx={{ variant: 'containerspec', mb: 5 }}>
     <h1 sx={{ mb: 0, color: 'grey' }}>What is Hack Club ?</h1>
     <h1 sx={{ variant: 'headerspec', my: 0 }}>
       <span sx={{ color: 'primary' }}>Philosophy</span>
