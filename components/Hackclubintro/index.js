@@ -31,7 +31,7 @@ export default () => (
 )
 
 const Image = ({ imgname, text, Info }) => (
-  <div sx={{ mr: [2, 4, 1], mr: [3, 2] }}>
+  <div sx={{ mr: [3, 4, 1] }}>
     <div
       sx={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 50%),url(hackclubintro/${imgname})`,
