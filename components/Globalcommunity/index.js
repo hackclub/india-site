@@ -85,9 +85,11 @@ const Image = () => (
 const Imagesecond = () => (
   <div
     sx={{
+      variant: 'imgpad',
       gridColumn: [null, null, '3/4'],
       height: '500px',
-      mr: [3, 4, 2],
+
+      //     mr: [3, 4, 2],
       mt: [2, 0]
     }}
   >
@@ -102,7 +104,8 @@ const Imagesecond = () => (
         display: 'flex',
         flexDirection: 'column-reverse',
         color: 'white',
-        pl: 3
+        pl: 3,
+        backgroundPosition: 'center center'
       }}
     >
       <p

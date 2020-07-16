@@ -85,9 +85,10 @@ const Stickers = () => (
 const Projects = () => (
   <div
     sx={{
-      // gridColumn: [null, null, '3/4'],
+      variant: 'imgpad',
       height: '450px',
-      mr: [3, 4, 2],
+      //mr: [3, 4, 2],
+
       mt: [2, 0]
     }}
   >

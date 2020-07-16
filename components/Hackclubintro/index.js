@@ -25,13 +25,14 @@ export default () => (
         text={Text.get('exhibit')}
         Info={ExhibitInfo}
         imgname="codingvar.jpg"
+        last={true}
       />
     </Grid>
   </div>
 )
 
-const Image = ({ imgname, text, Info }) => (
-  <div sx={{ mr: [3, 4, 1] }}>
+const Image = ({ imgname, text, Info, last }) => (
+  <div sx={{ mr: last ? [3, 4, 3, 1] : [3, 4, 0] }}>
     <div
       sx={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 50%),url(hackclubintro/${imgname})`,

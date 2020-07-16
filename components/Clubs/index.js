@@ -4,7 +4,9 @@ import { jsx, Grid } from 'theme-ui'
 import styled from '@emotion/styled'
 
 export default () => (
-  <div sx={{ variant: 'containerspec', mb: 5, pb: [3, 4, 5], ml: [3, 5] }}>
+  <div
+    sx={{ variant: 'containerspec', mb: 5, pb: [3, 4, 5], ml: [3, 4, 4, 5] }}
+  >
     <h1 sx={{ color: 'grey', my: 0 }}>
       <span
         sx={{
@@ -35,7 +37,8 @@ export default () => (
       <GrantFeature
         sx={{
           borderRadius: 8,
-          mr: [3, 4, 1],
+          //   mr: [3, 4, 1],
+          variant: 'imgpad',
           color: 'white',
           //      gridColumn: ['1/3', '1/2', '1/2'],
           pb: [4, 5],
@@ -96,7 +99,8 @@ const GrantFeature = styled.div`
 const Imagesecond = () => (
   <div
     sx={{
-      mr: [3, 4, 2],
+      //      mr: [3, 4, 2],
+      variant: 'imgpad',
       mt: [2, 5, 0],
       height: ['400px', '400px', 'initial']
     }}
