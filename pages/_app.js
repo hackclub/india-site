@@ -9,14 +9,11 @@ import Meta from '@hackclub/meta'
 
 import { ThemeProvider } from 'theme-ui'
 
-//import ColorSwitcher from '../components/color-switcher'
-
 export default class App extends NextApp {
   render() {
     const { Component, pageProps } = this.props
     return (
       <ThemeProvider theme={theme}>
-        {/* <ColorSwitcher /> */}
         <Meta name="Hack Club India" title="Hack Club India" as={Head} />
         <Head>
           <meta name="twitter:site" content="@hackclubindia" />{' '}
