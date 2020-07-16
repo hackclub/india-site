@@ -11,7 +11,7 @@ export default () => (
       access to a super awesome community that will help you to learn, share,
       and grow.
     </p>
-    <Grid columns={[1, 1, 3]}>
+    <Grid columns={[1, 1, 2, 3]}>
       <Image />
       <Imagesecond />
     </Grid>
@@ -21,7 +21,7 @@ export default () => (
 const Image = () => (
   <div
     sx={{
-      gridColumn: [null, null, '1/3'],
+      gridColumn: [null, null, null, '1/3'],
       height: '500px',
       mr: [3, 4, 1]
     }}
@@ -86,10 +86,9 @@ const Imagesecond = () => (
   <div
     sx={{
       variant: 'imgpad',
-      gridColumn: [null, null, '3/4'],
+      gridColumn: [null, null, null, '3/4'],
       height: '500px',
 
-      //     mr: [3, 4, 2],
       mt: [2, 0]
     }}
   >
