@@ -31,7 +31,7 @@ const Stickers = () => (
   <div
     sx={{
       height: '450px',
-      mr: [2, 4, 1]
+      mr: [3, 4, 1]
     }}
   >
     <div
@@ -87,7 +87,7 @@ const Projects = () => (
     sx={{
       // gridColumn: [null, null, '3/4'],
       height: '450px',
-      mr: [2, 4, 2],
+      mr: [3, 4, 2],
       mt: [2, 0]
     }}
   >

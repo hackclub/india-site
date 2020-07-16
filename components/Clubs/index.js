@@ -35,7 +35,7 @@ export default () => (
       <GrantFeature
         sx={{
           borderRadius: 8,
-          mr: [2, 4, 1],
+          mr: [3, 4, 1],
           color: 'white',
           //      gridColumn: ['1/3', '1/2', '1/2'],
           pb: [4, 5],
@@ -96,7 +96,7 @@ const GrantFeature = styled.div`
 const Imagesecond = () => (
   <div
     sx={{
-      mr: [2, 4, 2],
+      mr: [3, 4, 2],
       mt: [2, 5, 0],
       height: ['400px', '400px', 'initial']
     }}

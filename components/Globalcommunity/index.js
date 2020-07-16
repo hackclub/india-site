@@ -23,7 +23,7 @@ const Image = () => (
     sx={{
       gridColumn: [null, null, '1/3'],
       height: '500px',
-      mr: [2, 4, 1]
+      mr: [3, 4, 1]
     }}
   >
     <div
@@ -87,7 +87,7 @@ const Imagesecond = () => (
     sx={{
       gridColumn: [null, null, '3/4'],
       height: '500px',
-      mr: [2, 4, 2],
+      mr: [3, 4, 2],
       mt: [2, 0]
     }}
   >
