@@ -71,7 +71,7 @@ const Image = () => (
       >
         <b>
           We run our community <span sx={{ color: 'red' }}>over slack</span>,
-          join hack club slack to chat with the other hack clubbers around the
+          join hack club's slack to chat with the other hack clubbers around the
           world.
         </b>
       </p>

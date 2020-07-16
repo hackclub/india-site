@@ -92,9 +92,9 @@ export default () => (
         <a href="https://www.facebook.com/hackclubindia/" target="_blank">
           <img
             src="social/facebook.png"
-            onClick={() =>
+            /*   onClick={() =>
               open(`https://www.facebook.com/hackclubindia/`, '_blank')
-            }
+            }*/
             sx={{
               width: [40, 46, 50, 64],
               height: [40, 46, 50, 64],
@@ -110,9 +110,9 @@ export default () => (
               height: [40, 46, 50, 64],
               mx: [2, 3]
             }}
-            onClick={() =>
+            /*    onClick={() =>
               open(`https://www.instagram.com/hackclubindia/`, '_blank')
-            }
+            }*/
           ></img>
         </a>
         <a href="https://twitter.com/HackClubIndia" target="_blank">
@@ -123,7 +123,7 @@ export default () => (
               height: [40, 46, 50, 64],
               mx: [2, 3]
             }}
-            onClick={() => open(`https://twitter.com/HackClubIndia`, '_blank')}
+            //  onClick={() => open(`https://twitter.com/HackClubIndia`, '_blank')}
           ></img>
         </a>
         <a
@@ -137,12 +137,12 @@ export default () => (
               height: [40, 46, 50, 64],
               mx: [2, 3]
             }}
-            onClick={() =>
+            /*    onClick={() =>
               open(
                 `https://www.youtube.com/channel/UCQzO0jpcRkP-9eWKMpJyB0w`,
                 '_blank'
               )
-            }
+            }*/
           ></img>
         </a>
       </div>

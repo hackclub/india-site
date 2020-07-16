@@ -47,8 +47,8 @@ export default () => (
       >
         <h1 sx={{ ml: 3 }}>Join the movement!</h1>
         <p sx={{ ml: 3, fontSize: 3 }}>
-          Apply for a hack club and make a community makers. We are looking for
-          people like you to widespread the movement.
+          Apply for a hack club and make a community of makers. We are looking
+          for people like you to widespread the movement.
         </p>
         <a
           href="https://apply.hackclub.com/"

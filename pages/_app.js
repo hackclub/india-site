@@ -17,7 +17,10 @@ export default class App extends NextApp {
     return (
       <ThemeProvider theme={theme}>
         {/* <ColorSwitcher /> */}
-        <Meta as={Head} />
+        <Meta name="Hack Club India" title="Hack Club India" as={Head} />
+        <Head>
+          <meta name="twitter:site" content="@hackclubindia" />{' '}
+        </Head>
         <Component {...pageProps} />
       </ThemeProvider>
     )
