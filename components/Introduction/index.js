@@ -14,7 +14,12 @@ export default () => (
     }}
   >
     <div
-      sx={{ width: '100%', display: 'flex', justifyContent: 'center', mt: 5 }}
+      sx={{
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+        mt: [5]
+      }}
     >
       <img
         sx={{

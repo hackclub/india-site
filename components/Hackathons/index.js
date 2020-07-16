@@ -1,7 +1,7 @@
 /**@jsx jsx*/
 import { jsx, Grid } from 'theme-ui'
 export default () => (
-  <div sx={{ variant: 'containerspec', mb: 5 }}>
+  <div sx={{ variant: 'containerspec', mb: [5] }}>
     <h1 sx={{ fontSize: 4, color: 'grey', mb: 0 }}>
       Organize and attend hackathons!
     </h1>
