@@ -29,7 +29,7 @@ export default () => (
             'linear-gradient(-100deg, rgba(243, 234, 164, 0.33), rgba(243, 234, 164, 0.95), rgba(243, 234, 164, 0.1))'
         }}
       >
-        Spring 2020 applications accepted on a rolling basis.
+        Summer 2020 applications accepted on a rolling basis.
       </span>
     </p>
 
