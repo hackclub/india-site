@@ -119,7 +119,7 @@ const Projects = () => (
       >
         <b>
           Hack club's philosophy
-          <span sx={{ color: 'cyan' }}> is learining by doing. </span>
+          <span sx={{ color: 'cyan' }}> is learning by doing. </span>
           Attend nearby hack club events and bring out the innovator inside you!
         </b>
       </p>
