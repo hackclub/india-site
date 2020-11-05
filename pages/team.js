@@ -10,7 +10,7 @@ export default () => (
   <div sx={{ width: '100%' }}>
     <Header />
     <Intro />
-    <Grid columns={[1, 1, 2]} sx={{ pb: 5, mt: [4, 5] }}>
+    <Grid columns={[1, 1, 2]} sx={{ pb: 4, mt: [4, 5] }}>
       <Card
         url={'athul'}
         name="Athul Blesson"

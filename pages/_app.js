@@ -14,7 +14,7 @@ export default class App extends NextApp {
     const { Component, pageProps } = this.props
     return (
       <ThemeProvider theme={theme}>
-        <Meta name="Hack Club India" title="Hack Club India" as={Head} />
+        <Meta name="Hack Club India" title="Hack Club India-Website" as={Head} />
         <Head>
           <meta name="twitter:site" content="@hackclubindia" />{' '}
         </Head>

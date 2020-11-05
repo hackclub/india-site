@@ -10,6 +10,7 @@ import Clubs from '../components/Clubs/index'
 import Scrapbook from '../components/Scrapbook/index'
 import Hackathon from '../components/Hackathons/index'
 import Footer from '../components/Footer/index'
+import Meta from '../components/Meta/index'
 
 export default () => {
   return (
@@ -17,7 +18,8 @@ export default () => {
       <Head>
         <title>Hack Club India</title>
       </Head>
-      <Header />
+      <Meta isLandingPage={true} />
+       <Header />
       <Introduction />
       <HackIntro />
       <GlobalCommunity />
